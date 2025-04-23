@@ -74,7 +74,7 @@ for ip in $public_ips; do
 
     for ((i=1; i<=container_count; i++))
     do
-        storage_path="/root/.titan_storage/${ip}_${i}"
+        storage_path="/root/titan_storage_${ip}_${i}"
 
         mkdir -p "$storage_path"
 
@@ -98,7 +98,6 @@ for ip in $public_ips; do
         current_port=$((current_port + 1))
     done
 done
-
 
 echo -e "${GREEN}============================== All nodes have been set up and are running ===============================${NC}"
 
