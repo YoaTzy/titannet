@@ -100,4 +100,3 @@ for ip in $public_ips; do
 done
 
 echo -e "${GREEN}============================== All nodes have been set up and are running ===============================${NC}"
-
